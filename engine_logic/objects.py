@@ -10,7 +10,7 @@ class Circle:
         self.opacity = 1.0
 
     def draw(self,ax):
-        circle = plt.Circle((self.x, self.y), self.radius, color=(*to_rgba(self.color)[:3], self.opacity), fille=True)
+        circle = plt.Circle((self.x, self.y), self.radius, color=(*to_rgba(self.color)[:3], self.opacity), fill=True)
         ax.add_patch(circle)
 
 class Text:
@@ -23,5 +23,5 @@ class Text:
         self.opacity = 1.0
 
     def draw(self, ax):
-        ax.text(self.xmself.y,self.text, color=(*to_rgba(self.color)[:3], self.opacity), fontsize = self.size, ha='center', va='center')
+        ax.text(self.x, self.y,self.text, color=(*to_rgba(self.color)[:3], self.opacity), fontsize = self.size, ha='center', va='center')
             
